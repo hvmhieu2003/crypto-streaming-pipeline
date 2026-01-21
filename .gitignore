@@ -1,0 +1,16 @@
+# Databases & Logs
+data/
+logs/
+*.db
+*.sqlite
+
+# Environment variables (Bảo mật)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# VSCode configs
+.vscode/

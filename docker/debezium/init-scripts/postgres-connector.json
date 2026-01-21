@@ -1,0 +1,17 @@
+{
+  "name": "crypto-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "plugin.name": "pgoutput",
+    "database.hostname": "postgres-main",
+    "database.port": "5432",
+    "database.user": "myuser",
+    "database.password": "mypassword",
+    "database.dbname": "crypto_db",
+    "database.server.name": "postgres-main",
+    "decimal.handling.mode": "double",
+    "table.include.list": "public.bitcoin_prices",
+    "topic.prefix": "cdc",
+    "slot.name": "debezium_slot"
+  }
+}
